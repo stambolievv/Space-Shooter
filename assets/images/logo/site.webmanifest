@@ -1,0 +1,19 @@
+{
+    "name": "Space Shooter",
+    "short_name": "Space Shooter",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#073349",
+    "background_color": "#073349",
+    "display": "standalone"
+}
