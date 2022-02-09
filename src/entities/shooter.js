@@ -54,13 +54,13 @@ class Shooter {
 
     this.health.graphics.clear();
     this.health.graphics
-    .beginFill('0x000')
-    .drawPolygon([
-      16, 10,
-      16 + (100), 10,
-      8 + (100), 20,
-      8, 20,
-    ])
+      .beginFill('0x000')
+      .drawPolygon([
+        16, 10,
+        16 + (100), 10,
+        8 + (100), 20,
+        8, 20,
+      ])
       .beginFill('0x00CC99')
       .drawPolygon([
         16, 10,
