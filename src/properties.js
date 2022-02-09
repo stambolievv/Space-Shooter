@@ -8,5 +8,5 @@ export const GAME = {
   SCORE: 0,
   HIGHSCORE: Number(localStorage.getItem('ss-highscore')) || 0,
   GAMEOVER: false,
-  FINISHED: false,
+  FINISHED: false
 };
