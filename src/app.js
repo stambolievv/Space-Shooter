@@ -16,16 +16,16 @@ document.body.appendChild(app.view);
 const stage = new PIXI.Container();
 
 app.loader
-  .add('background', '../assets/images/background.png')
-  .add('Devans', '../assets/fonts/Devans.woff')
-  .add('enemy1', '../assets/images/enemy1.png')
-  .add('enemy2', '../assets/images/enemy2.png')
-  .add('shooter', '../assets/images/shooter.png')
-  .add('rocket', '../assets/images/rocket.png')
-  .add('explosion', '../assets/images/explosion.png')
-  .add('soundBackground', '../assets/audio/background.wav')
-  .add('soundExplosion', '../assets/audio/explosion.wav')
-  .add('soundRocket', '../assets/audio/rocket.wav')
+  .add('background', 'assets/images/background.png')
+  .add('Devans', 'assets/fonts/Devans.woff')
+  .add('enemy1', 'assets/images/enemy1.png')
+  .add('enemy2', 'assets/images/enemy2.png')
+  .add('shooter', 'assets/images/shooter.png')
+  .add('rocket', 'assets/images/rocket.png')
+  .add('explosion', 'assets/images/explosion.png')
+  .add('soundBackground', 'assets/audio/background.wav')
+  .add('soundExplosion', 'assets/audio/explosion.wav')
+  .add('soundRocket', 'assets/audio/rocket.wav')
   .load(preload);
 
 function preload() {

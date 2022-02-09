@@ -5,6 +5,6 @@
 ## Controls
 
 <pre>
-  Left click makes the player shoot towards the aim.
-  Right click moves him towards the aim's position.
+  Left click  -- makes the player shoot towards the aim.
+  Right click -- moves him towards the aim's position.
 </pre>
