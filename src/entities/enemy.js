@@ -122,6 +122,7 @@ function animateEnemy(stage, deltaTime) {
       bombExplosion(stage, enemy.texture.position.x, enemy.texture.position.y);
 
       if (enemy.health.current == 0) {
+        floatingScore(stage, enemy, 100);
         checkScore(100);
         checkHighScore();
 
@@ -131,6 +132,35 @@ function animateEnemy(stage, deltaTime) {
       }
     }
   });
+}
+
+function floatingScore(stage, enemy, point) {
+  const style = {
+    fontFamily: 'Devans',
+    fill: '#ffffff',
+    align: 'center',
+    strokeThickness: 2,
+  };
+
+  const scoreText = new PIXI.Text('+' + point, style);
+  scoreText.alpha = 0;
+  scoreText.anchor.set(0.5, 0.5);
+  scoreText.position.set(enemy.texture.position.x, enemy.texture.position.y - 20);
+
+  stage.addChild(scoreText);
+
+  let count = 0;
+  const scoreInterval = setInterval(() => {
+    scoreText.scale.set(count * 0.03);
+    scoreText.y -= count * 0.03;
+    scoreText.alpha = 1 - (count * 0.02);
+
+    if (count > 50) {
+      clearInterval(scoreInterval);
+      stage.removeChild(scoreText);
+    }
+    count += 0.8;
+  }, 10);
 }
 
 function checkScore(point) {
