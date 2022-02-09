@@ -1,0 +1,31 @@
+{
+  "name": "space-shooter",
+  "version": "1.0.0",
+  "description": "Space Shooter is game where you fight for your survival against antigalactic enemies!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stambolievv/Space-Shooter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stambolievv/Space-Shooter/issues"
+  },
+  "keywords": [
+    "game",
+    "PIXI",
+    "space",
+    "shooter"
+  ],
+  "author": "DKS",
+  "license": "MIT",
+  "dependencies": {
+    "pixi.js": "^6.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "git": "^0.1.5"
+  }
+}

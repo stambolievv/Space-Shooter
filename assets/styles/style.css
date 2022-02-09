@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Devans";
+  src: url("../fonts/Devans.woff") format("woff");
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  cursor: crosshair;
+}

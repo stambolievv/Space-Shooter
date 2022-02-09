@@ -1,0 +1,14 @@
+#---------------------------------------#
+# Project Ignores                       #
+#---------------------------------------#
+
+# dependencies
+node_modules
+package-lock.json
+
+# editor
+.vscode
+
+# misc
+TODO
+*.log
