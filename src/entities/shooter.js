@@ -109,7 +109,7 @@ function spawnShooter(stage) {
 function animateShooter(stage, deltaTime) {
   shooter.object.update(GAME.MOUSE, enemies.objects);
 
-  if (shooter.object.health.current < 600) { shooter.object.health.current += deltaTime * 0.2; }
+  if (shooter.object.health.current < shooter.object.health.max) { shooter.object.health.current += deltaTime * 0.2; }
 
   overlap([shooter.object], rockets.objects, (shooter, rocket) => {
     if (!rocket.fromPlayer) {
