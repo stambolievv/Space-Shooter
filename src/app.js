@@ -26,13 +26,14 @@ app.loader
   .add('soundBackground', 'assets/audio/background.wav')
   .add('soundExplosion', 'assets/audio/explosion.wav')
   .add('soundRocket', 'assets/audio/rocket.wav')
+  .add('soundGameover', 'assets/audio/gameover.wav')
   .load(preload);
 
 function preload() {
   initBackground(app.loader.resources['background'].url);
 
   setText();
-  setSound(app.loader.resources['soundBackground'].sound, app.loader.resources['soundExplosion'].sound, app.loader.resources['soundRocket'].sound);
+  setSound(app.loader.resources['soundBackground'].sound, app.loader.resources['soundExplosion'].sound, app.loader.resources['soundRocket'].sound, app.loader.resources['soundGameover'].sound);
 
   initEnemy(app.loader.resources['enemy1'].url, app.loader.resources['enemy2'].url);
   spawnEnemy(stage);
@@ -108,7 +109,8 @@ function setSound(...data) {
 
 /* Handle Game Over */
 function gameover() {
-  Object.values(GAME.SOUNDS).forEach(s => s.pause());
+  Object.values(GAME.SOUNDS).forEach(s => s.stop());
+  GAME.SOUNDS.gameover.play();
 
   const style = {
     fontFamily: 'Devans',
